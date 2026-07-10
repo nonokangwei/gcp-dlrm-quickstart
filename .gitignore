@@ -1,0 +1,9 @@
+.claude/
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+vertex_build/
+/tmp/
+*.pt
+.DS_Store
