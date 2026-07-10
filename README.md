@@ -3,7 +3,7 @@
 <table align="left">
   <td align="center">
     <a href="https://colab.research.google.com/github/nonokangwei/gcp-dlrm-quickstart/blob/main/gcp-dlrm-quickstart.ipynb">
-      <img src="https://cloud.google.com/ml-engine/images/colab-logo-32px.png" width="32" alt="Colab logo"><br>Open in Colab
+      <img src="https://www.gstatic.com/pantheon/images/bigquery/welcome_page/colab-logo.svg" width="32" alt="Colab logo"><br>Open in Colab
     </a>
   </td>
   <td align="center">
@@ -13,7 +13,7 @@
   </td>
   <td align="center">
     <a href="https://github.com/nonokangwei/gcp-dlrm-quickstart/blob/main/gcp-dlrm-quickstart.ipynb">
-      <img src="https://cloud.google.com/ml-engine/images/github-logo-32px.png" width="32" alt="GitHub logo"><br>View on GitHub
+      <img src="https://raw.githubusercontent.com/primer/octicons/refs/heads/main/icons/mark-github-24.svg" width="32" alt="GitHub logo"><br>View on GitHub
     </a>
   </td>
 </table>
