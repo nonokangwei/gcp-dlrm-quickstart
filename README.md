@@ -2,6 +2,9 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/nonokangwei/gcp-dlrm-quickstart/blob/main/gcp-dlrm-quickstart.ipynb)
 
+> 上方徽章会在**标准 Colab** 中打开 notebook，可用于浏览代码或运行 Step 1 / Step 6（不需要本地 GPU 的部分）。
+> **完整运行（含 Step 4/5 的本地 4×GPU 训练）需要 [Colab Enterprise](https://cloud.google.com/colab/docs/introduction)**：在 GCP Console → Vertex AI → Colab Enterprise 中新建 notebook → `File > Upload notebook > GitHub`，粘贴本仓库地址导入，然后挂载一个带 4×T4 GPU 的 runtime template。
+
 一个端到端的 DLRM（Deep Learning Recommendation Model）推荐系统训练示例，演示如何在 **Google Cloud** 上完成从数据准备、单卡/多卡/多机训练、实验追踪到模型推理的完整流程。
 
 本项目由 Databricks 官方 DLRM 示例迁移而来，把原本依赖 Unity Catalog / MLflow / TorchDistributor 的部分全部替换为 GCP 原生服务：
