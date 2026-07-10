@@ -1,9 +1,9 @@
 """Submit multi-node multi-GPU DLRM training to Vertex AI Custom Training."""
 from google.cloud import aiplatform
 
-PROJECT_ID = "project-kangwe-poc"
+PROJECT_ID = "your-project-id"
 REGION = "us-central1"
-STAGING_BUCKET = "gs://project-kangwe-poc-dlrm/staging"
+STAGING_BUCKET = "gs://your-dlrm-bucket/staging"
 IMAGE_URI = f"us-central1-docker.pkg.dev/{PROJECT_ID}/dlrm/dlrm-train:latest"
 
 # 机器规格：按需改。n1-standard-16 + 4×T4 是和你本地 g4dn.12xlarge 对等的配置
@@ -39,6 +39,6 @@ job = aiplatform.CustomJob(
     worker_pool_specs=worker_pool_specs,
 )
 job.run(
-    service_account=None,           # 需要能读写 gs://project-kangwe-poc-dlrm 的 SA
+    service_account=None,           # 需要能读写 gs://your-dlrm-bucket 的 SA
     enable_web_access=True,         # 可选：开交互式 shell 方便调试
 )

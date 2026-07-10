@@ -50,13 +50,13 @@ DENSE_COLS = [f"int_{i}" for i in range(1, 11)]
 CAT_COLS = [f"cat_{i}" for i in range(1, 11)]
 EMB_COUNTS = [CAT_DATA[k] for k in CAT_COLS]
 
-INPUT_DIR_TRAIN = "gs://project-kangwe-poc-dlrm/mds_data/train"
-INPUT_DIR_VALIDATION = "gs://project-kangwe-poc-dlrm/mds_data/validation"
-INPUT_DIR_TEST = "gs://project-kangwe-poc-dlrm/mds_data/test"
-BUCKET_PATH = "gs://project-kangwe-poc-dlrm"
+INPUT_DIR_TRAIN = "gs://your-dlrm-bucket/mds_data/train"
+INPUT_DIR_VALIDATION = "gs://your-dlrm-bucket/mds_data/validation"
+INPUT_DIR_TEST = "gs://your-dlrm-bucket/mds_data/test"
+BUCKET_PATH = "gs://your-dlrm-bucket"
 LOCAL_CACHE_ROOT = "/tmp/cache"
 
-PROJECT_ID = "project-kangwe-poc"
+PROJECT_ID = "your-project-id"
 REGION = "us-central1"
 EXPERIMENT_NAME = "dlrm-training-demo"
 

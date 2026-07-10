@@ -24,11 +24,11 @@ from torchrec.sparse.jagged_tensor import KeyedJaggedTensor
 # ----------------------------------------------------------------------------
 # Config
 # ----------------------------------------------------------------------------
-PROJECT_ID = "project-kangwe-poc"
+PROJECT_ID = "your-project-id"
 REGION = "us-central1"
 EXPERIMENT_NAME = "dlrm-training-demo"
 
-TEST_DATA_REMOTE = "gs://project-kangwe-poc-dlrm/mds_data/test"
+TEST_DATA_REMOTE = "gs://your-dlrm-bucket/mds_data/test"
 TEST_DATA_LOCAL = "/tmp/cache/infer_test"
 
 aiplatform.init(project=PROJECT_ID, location=REGION, experiment=EXPERIMENT_NAME)
