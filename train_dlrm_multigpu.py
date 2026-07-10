@@ -367,7 +367,8 @@ def main(args: Args):
         try:
             from google.cloud import aiplatform
             aiplatform.init(project=PROJECT_ID, location=REGION, experiment=EXPERIMENT_NAME)
-            aiplatform.start_run(run=run_name)aiplatform.log_params(to_vertex_params(get_relevant_fields(args)))
+            aiplatform.start_run(run=run_name)
+            aiplatform.log_params(to_vertex_params(get_relevant_fields(args)))
             
         except Exception as e:
             print(f"[warn] vertex init failed: {e}")
